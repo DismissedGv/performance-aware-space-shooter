@@ -1,18 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletSystem1 : MonoBehaviour
+public enum CollisionLayer
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    Default = 1 << 0,
+    Wall = 1 << 6,
+    Enemy = 1 << 7
+}
 
-    // Update is called once per frame
-    void Update()
+public class LayerMaskHelper
+{
+    public static uint GetLayerMaskFromTwoLayers(CollisionLayer layer1, CollisionLayer layer2)
     {
-        
+        return (uint)layer1 | (uint)layer2;
     }
 }
