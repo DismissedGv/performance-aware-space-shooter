@@ -3,4 +3,4 @@ I finished only the wanted specifics and nothing more, so there is no gameloop a
 * Shooting
 * Waves of enemies
 
-This was really interesting, thank you Cornelius!
+This was really hard and interesting, thank you Cornelius!
